@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menu"
+    android:background="@drawable/bgr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#AB363535">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fadeblack"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="18dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="M E N U"
+                        android:textColor="#B4FFFEFE"
+                        android:textSize="38sp" />
+                </LinearLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/stroke"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/whitepasta"
+                        android:layout_width="124dp"
+                        android:layout_height="129dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="28dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/whitepasta"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/pastaatc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add to Cart"
+                        app:layout_constraintBottom_toBottomOf="@+id/whitepasta"
+                        app:layout_constraintEnd_toEndOf="@+id/whitepasta"
+                        app:layout_constraintStart_toStartOf="@+id/whitepasta"
+                        app:layout_constraintTop_toBottomOf="@+id/whitepasta" />
+
+                    <ImageView
+                        android:id="@+id/veg"
+                        android:layout_width="27dp"
+                        android:layout_height="31dp"
+
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.142"
+                        app:srcCompat="@drawable/veg" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="monospace"
+                        android:text="White Sauce Pasta"
+                        android:textColor="#F3EEEE"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/veg"
+                        app:layout_constraintTop_toBottomOf="@+id/veg" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Rs 120"
+                        android:textColor="#FBF8F8"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView3"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="(Pasta ,capsicon, white creamy sauce)"
+                        android:textColor="#FDFAFA"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/textView4"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/stroke"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/redpasta"
+                        android:layout_width="124dp"
+                        android:layout_height="129dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="28dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/redpasta"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/redpastaatc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add to Cart"
+                        app:layout_constraintBottom_toBottomOf="@+id/redpasta"
+                        app:layout_constraintEnd_toEndOf="@+id/redpasta"
+                        app:layout_constraintStart_toStartOf="@+id/redpasta"
+                        app:layout_constraintTop_toBottomOf="@+id/redpasta" />
+
+                    <ImageView
+                        android:id="@+id/veg1"
+                        android:layout_width="27dp"
+                        android:layout_height="31dp"
+
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.142"
+                        app:srcCompat="@drawable/veg" />
+
+                    <TextView
+                        android:id="@+id/redpastatext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="monospace"
+                        android:text="Red Sauce Pasta"
+                        android:textColor="#F3EEEE"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/veg1"
+                        app:layout_constraintTop_toBottomOf="@+id/veg1" />
+
+                    <TextView
+                        android:id="@+id/redpastarec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Rs 110"
+                        android:textColor="#FBF8F8"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/redpastatext"
+                        app:layout_constraintTop_toBottomOf="@+id/redpastatext" />
+
+                    <TextView
+                        android:id="@+id/redpastamrp"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="(Pasta ,capsicon, red spicy sauce )"
+                        android:textColor="#FDFAFA"
+                        android:textSize="10sp"
+                        app:layout_constraintStart_toStartOf="@+id/redpastarec"
+                        app:layout_constraintTop_toBottomOf="@+id/redpastarec"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                        app:layout_constraintHorizontal_bias="0.0"/>
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        app:layout_constraintGuide_begin="185dp" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/stroke"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/noodle"
+                        android:layout_width="124dp"
+                        android:layout_height="129dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="28dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/noodle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/noodle2atc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add to Cart"
+                        app:layout_constraintBottom_toBottomOf="@+id/noodle"
+                        app:layout_constraintEnd_toEndOf="@+id/noodle"
+                        app:layout_constraintStart_toStartOf="@+id/noodle"
+                        app:layout_constraintTop_toBottomOf="@+id/noodle" />
+
+                    <ImageView
+                        android:id="@+id/veg2"
+                        android:layout_width="27dp"
+                        android:layout_height="31dp"
+
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.142"
+                        app:srcCompat="@drawable/veg" />
+
+                    <TextView
+                        android:id="@+id/noodletext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="monospace"
+                        android:text="Veg Chowmin"
+                        android:textColor="#F3EEEE"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/veg2"
+                        app:layout_constraintTop_toBottomOf="@+id/veg2" />
+
+                    <TextView
+                        android:id="@+id/noodlerec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Rs 100"
+                        android:textColor="#FBF8F8"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/noodletext"
+                        app:layout_constraintTop_toBottomOf="@+id/noodletext" />
+
+                    <TextView
+                        android:id="@+id/noodlemrp"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="(Noodles ,capsicon,sauces,vegies)"
+                        android:textColor="#FDFAFA"
+                        android:textSize="10sp"
+                        app:layout_constraintStart_toStartOf="@+id/noodlerec"
+                        app:layout_constraintTop_toBottomOf="@+id/noodlerec"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                        app:layout_constraintHorizontal_bias="0.0"/>
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="185dp" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/stroke"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/noodle2"
+                        android:layout_width="124dp"
+                        android:layout_height="129dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="28dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/noodle"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/noodle21atc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add to Cart"
+                        app:layout_constraintBottom_toBottomOf="@+id/noodle2"
+                        app:layout_constraintEnd_toEndOf="@+id/noodle2"
+                        app:layout_constraintStart_toStartOf="@+id/noodle2"
+                        app:layout_constraintTop_toBottomOf="@+id/noodle2" />
+
+                    <ImageView
+                        android:id="@+id/veg3"
+                        android:layout_width="27dp"
+                        android:layout_height="31dp"
+
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.142"
+                        app:srcCompat="@drawable/veg" />
+
+                    <TextView
+                        android:id="@+id/noodle2text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="monospace"
+                        android:text="Veg Chowmin"
+                        android:textColor="#F3EEEE"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/veg3"
+                        app:layout_constraintTop_toBottomOf="@+id/veg3" />
+
+                    <TextView
+                        android:id="@+id/noodle2rec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Rs 100"
+                        android:textColor="#FBF8F8"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/noodle2text"
+                        app:layout_constraintTop_toBottomOf="@+id/noodle2text" />
+
+                    <TextView
+                        android:id="@+id/noodle2mrp"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="(Noodles ,capsicon,sauces,vegies)"
+                        android:textColor="#FDFAFA"
+                        android:textSize="10sp"
+                        app:layout_constraintStart_toStartOf="@+id/noodle2rec"
+                        app:layout_constraintTop_toBottomOf="@+id/noodle2rec"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                        app:layout_constraintHorizontal_bias="0.0"/>
+
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/guideline4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="185dp" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
